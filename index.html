@@ -3,57 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giulia Citterio</title>
+  <title>Giulia Citterio - Aṣṭāṅga & Black Lotus Yoga</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background-color: #fdfcfb; }
+    body { 
+      background-color: #fdfcfb;
+      scroll-behavior: smooth;
+    }
+    .hero-overlay {
+      background: linear-gradient(to bottom, rgba(76, 29, 149, 0.5), rgba(76, 29, 149, 0.7));
+    }
+    .social-icon {
+      transition: all 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: translateY(-3px);
+      color: #d8b4fe;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans text-gray-800">
 
   <!-- HEADER -->
   <header class="relative">
     <img src="DSCF1375web.jpg" alt="Yoga in natura" class="w-full h-96 object-cover">
-    <div class="absolute inset-0 bg-purple-900 bg-opacity-40 flex items-center justify-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-white">Giulia – Aṣṭāṅga & Black Lotus Yoga</h1>
+    <div class="absolute inset-0 hero-overlay flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Giulia Citterio</h1>
+      <p class="text-xl md:text-2xl text-white">Aṣṭāṅga & Black Lotus Yoga</p>
     </div>
   </header>
 
+  <!-- NAVIGATION (nuova aggiunta) -->
+  <nav class="sticky top-0 bg-white shadow-md z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center items-center py-3">
+        <!-- <div class="font-semibold text-purple-900">Giulia Citterio Yoga</div> -->
+        <div class="flex space-x-6">
+          <a href="#bio" class="text-purple-800 hover:text-purple-600">Chi sono</a>
+          <a href="#black-lotus" class="text-purple-800 hover:text-purple-600">Black Lotus</a>
+          <a href="#eventi" class="text-purple-800 hover:text-purple-600">Eventi</a>
+          <a href="#contatti" class="text-purple-800 hover:text-purple-600">Contatti</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <!-- BIO -->
-  <section class="max-w-5xl mx-auto py-12 px-4 flex flex-col md:flex-row items-center gap-8">
-    <img src="DSCF1409web.jpg" alt="Giulia" class="w-48 h-48 object-cover rounded-full shadow-lg border-4 border-purple-200">
-    <div>
-      <h2 class="text-2xl font-bold mb-4 text-purple-900">Chi sono</h2>
-      <p class="text-lg leading-relaxed">
+  <section id="bio" class="max-w-5xl mx-auto py-16 px-4 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-shrink-0">
+      <img src="DSCF1409web.jpg" alt="Giulia" class="w-56 h-56 object-cover rounded-full shadow-lg border-4 border-purple-200">
+    </div>
+    <div class="flex-grow">
+      <h2 class="text-3xl font-bold mb-6 text-purple-900 border-b-2 border-purple-200 pb-2">Chi sono</h2>
+      <p class="text-lg leading-relaxed mb-4">
         Pratico Yoga dal 2007 e insegno Aṣṭāṅga Yoga dal 2013 a Belluno e in provincia. 
-        Nel 2018, insieme ad alcuni colleghi e amici, ho fondato <strong>Aṣṭāṅga Belluno</strong>, 
+        Nel 2018, insieme ad alcuni colleghi e amici, ho fondato <strong class="text-purple-800">Aṣṭāṅga Belluno</strong>, 
         dove conduco quotidianamente classi guidate, Mysore e workshop. 
         Negli anni ho avuto la fortuna di praticare con grandi insegnanti, tra cui 
         <em>Gabriele Severini, Manju Jois, Susanna Finocchi e Ty Landrum</em>. 
-        Dal 2017 seguo con regolarità Ty, e dal 2019 lo assisto nei suoi ritiri in Italia e all’estero.
+        Dal 2017 seguo con regolarità Ty, e dal 2019 lo assisto nei suoi ritiri in Italia e all'estero.
       </p>
-      <p class="text-lg leading-relaxed mt-4">
+      <p class="text-lg leading-relaxed mb-4">
         Nella mia pratica e nelle lezioni pongo attenzione alla stabilità delle posture e al respiro libero, 
         per generare apertura e ricettività. 
         Con passione e gentilezza accompagno gli studenti in un percorso personalizzato e non dogmatico, 
         portando lo Yoga dal tappetino alla vita quotidiana.
       </p>
-      <p class="text-lg leading-relaxed mt-4">
-        Attualmente insegno sia <strong>Aṣṭāṅga</strong> che <strong>Black Lotus Yoga</strong>, 
+      <p class="text-lg leading-relaxed">
+        Attualmente insegno sia <strong class="text-purple-800">Aṣṭāṅga</strong> che <strong class="text-purple-800">Black Lotus Yoga</strong>, 
         in classi guidate e Mysore style.
       </p>
     </div>
   </section>
 
   <!-- BLACK LOTUS -->
-  <section class="bg-purple-50 py-12">
+  <section id="black-lotus" class="bg-purple-50 py-16">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6 text-purple-900 text-center">Black Lotus Yoga</h2>
-      <p class="text-lg leading-relaxed text-gray-700">
-        Il <strong>Black Lotus Yoga</strong>, sviluppato da Ty Landrum, è una nuova forma di 
+      <h2 class="text-3xl font-bold mb-8 text-purple-900 text-center border-b-2 border-purple-200 pb-2">Black Lotus Yoga</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Il <strong class="text-purple-800">Black Lotus Yoga</strong>, sviluppato da Ty Landrum, è una nuova forma di 
         <em>vinyasa yoga</em> pensata per lo stile Mysore. 
         Si articola in sei sequenze fluide e armoniose che aprono i canali interni 
-        e stimolano il flusso creativo dell’energia. 
+        e stimolano il flusso creativo dell'energia. 
+      </p>
+      <p class="text-lg leading-relaxed text-gray-700">
         Ogni sequenza ha tre tonalità (bianco, grigio e nero), 
         che permettono di personalizzare la pratica e adattarla alle esigenze di ciascuno.  
         È un sistema generoso, profondo e allo stesso tempo accessibile.
@@ -62,46 +96,103 @@
   </section>
 
   <!-- EVENTI -->
-  <section class="bg-gray-100 py-12">
+  <section id="eventi" class="bg-gray-100 py-16">
     <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6 text-center text-purple-900">Appuntamenti – Autunno 2025</h2>
-      <ul class="grid md:grid-cols-2 gap-6">
-        <li class="p-4 bg-white shadow rounded-lg hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-purple-800">4 ottobre – Mirano (VE)</h3>
-          <p>Pratica presso ASD Yoga Arte – <a href="https://instagram.com/yogaartelab" target="_blank" class="underline">IG @yogaartelab</a></p>
+      <h2 class="text-3xl font-bold mb-10 text-center text-purple-900 border-b-2 border-purple-200 pb-2">Appuntamenti – Autunno 2025</h2>
+      <ul class="grid md:grid-cols-2 gap-8">
+        <li class="p-6 bg-white shadow rounded-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+          <h3 class="text-xl font-semibold text-purple-800 mb-2">4 ottobre – Mirano (VE)</h3>
+          <p class="mb-3">Pratica presso ASD Yoga Arte</p>
+          <a href="https://instagram.com/yogaartelab" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+            <i class="fab fa-instagram mr-2"></i> @yogaartelab
+          </a>
         </li>
-        <li class="p-4 bg-white shadow rounded-lg hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-purple-800">11/12 ottobre – Milano</h3>
-          <p>Workshop presso Studio Jyotir – 
-          <a href="https://www.studioyogapsicologia.com/workshop-con-giulia-sequenze-black-lotus-i-e-ii-serie-di-ty-landrum/" target="_blank" class="underline">Info</a>, 
-          <a href="https://instagram.com/studiojyotir" target="_blank" class="underline">IG @studiojyotir</a></p>
+        <li class="p-6 bg-white shadow rounded-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+          <h3 class="text-xl font-semibold text-purple-800 mb-2">11/12 ottobre – Milano</h3>
+          <p class="mb-3">Workshop presso Studio Jyotir</p>
+          <div class="flex flex-col space-y-2">
+            <a href="https://www.studioyogapsicologia.com/workshop-con-giulia-sequenze-black-lotus-i-e-ii-serie-di-ty-landrum/" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+              <i class="fas fa-info-circle mr-2"></i> Dettagli evento
+            </a>
+            <a href="https://instagram.com/studiojyotir" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+              <i class="fab fa-instagram mr-2"></i> @studiojyotir
+            </a>
+          </div>
         </li>
-        <li class="p-4 bg-white shadow rounded-lg hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-purple-800">25/26 ottobre – Cologna Veneta (VR)</h3>
-          <p>Workshop presso ASD MysoreYogaProject – 
-          <a href="https://instagram.com/mysoreyogaproject.asd" target="_blank" class="underline">IG @mysoreyogaproject.asd</a></p>
+        <li class="p-6 bg-white shadow rounded-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+          <h3 class="text-xl font-semibold text-purple-800 mb-2">25/26 ottobre – Cologna Veneta (VR)</h3>
+          <p class="mb-3">Workshop presso ASD MysoreYogaProject</p>
+          <a href="https://instagram.com/mysoreyogaproject.asd" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+            <i class="fab fa-instagram mr-2"></i> @mysoreyogaproject.asd
+          </a>
         </li>
-        <li class="p-4 bg-white shadow rounded-lg hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-purple-800">8 novembre – Belluno</h3>
-          <p>Approfondimento Black Lotus Yoga presso AYBL – 
-          <a href="https://instagram.com/ashtangabelluno" target="_blank" class="underline">IG @ashtangabelluno</a></p>
+        <li class="p-6 bg-white shadow rounded-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+          <h3 class="text-xl font-semibold text-purple-800 mb-2">8 novembre – Belluno</h3>
+          <p class="mb-3">Approfondimento Black Lotus Yoga presso AYBL</p>
+          <a href="https://instagram.com/ashtangabelluno" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+            <i class="fab fa-instagram mr-2"></i> @ashtangabelluno
+          </a>
         </li>
-        <li class="p-4 bg-white shadow rounded-lg hover:shadow-lg transition">
-          <h3 class="text-xl font-semibold text-purple-800">22/23 novembre – Trento</h3>
-          <p>Workshop presso AVY Ashtanga Vinyasa Trento – 
-          <a href="https://instagram.com/avytrentoashtangayoga" target="_blank" class="underline">IG @avytrentoashtangayoga</a></p>
+        <li class="p-6 bg-white shadow rounded-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500 md:col-span-2">
+          <h3 class="text-xl font-semibold text-purple-800 mb-2">22/23 novembre – Trento</h3>
+          <p class="mb-3">Workshop presso AVY Ashtanga Vinyasa Trento</p>
+          <a href="https://instagram.com/avytrentoashtangayoga" target="_blank" class="text-purple-600 hover:text-purple-800 inline-flex items-center">
+            <i class="fab fa-instagram mr-2"></i> @avytrentoashtangayoga
+          </a>
         </li>
       </ul>
     </div>
   </section>
 
   <!-- CONTATTI -->
-  <footer class="bg-purple-900 text-white py-12">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-4">Contatti</h2>
-      <p class="mb-2">📧 <a href="mailto:email@example.com" class="underline">email@example.com</a></p>
-      <p class="mb-2">📞 +39 333 1234567</p>
-      <p>🌐 <a href="https://instagram.com/tuoprofilo" target="_blank" class="underline">@tuoprofilo</a></p>
+  <footer id="contatti" class="bg-purple-900 text-white py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center border-b-2 border-purple-200 pb-2">Contatti</h2>
+      
+      <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+        <div class="text-center md:text-left">
+          <h3 class="text-xl font-semibold mb-4">Scrivimi o chiamami</h3>
+          <p class="mb-3 flex items-center justify-center md:justify-start">
+            <i class="fas fa-envelope mr-3 text-purple-200"></i>
+            <a href="mailto:giuliayoga@gmail.com" class="hover:text-purple-200 transition">email@example.com</a>
+          </p>
+          <!-- 
+            <p class="flex items-center justify-center md:justify-start">
+            <i class="fas fa-phone mr-3 text-purple-200"></i>
+            <a href="tel:+393331234567" class="hover:text-purple-200 transition">+39 333 1234567</a>
+          </p>
+          -->
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-xl font-semibold mb-4">Seguimi sui social</h3>
+          <div class="flex justify-center space-x-6">
+            <a href="https://instagram.com/giuliayogabelluno" target="_blank" class="social-icon text-2xl">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/giuliacitterio79" target="_blank" class="social-icon text-2xl">
+              <i class="fab fa-facebook"></i>
+            </a>
+          
+          </div>
+        </div>
+        
+        <div class="text-center md:text-right">
+          <h3 class="text-xl font-semibold mb-4">Dove praticare</h3>
+          <p class="flex items-center justify-center md:justify-end">
+            <i class="fas fa-map-marker-alt mr-3 text-purple-200"></i>
+            A.S.D. AYBL
+            Via Visome, 62 -Belluno (BL)
+          </p>
+          <a href="https://instagram.com/ashtangabelluno" target="_blank" class="text-purple-200 hover:text-white inline-flex items-center justify-center md:justify-end mt-2">
+            <i class="fab fa-instagram mr-2"></i> @ashtangabelluno
+          </a>
+        </div>
+      </div>
+      
+      <div class="mt-12 pt-6 border-t border-purple-700 text-center">
+        <p>© 2025 Christian Pastori – Tutti i diritti riservati</p>
+      </div>
     </div>
   </footer>
 
